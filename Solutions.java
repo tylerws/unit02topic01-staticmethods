@@ -25,8 +25,24 @@ public class Solutions {
         }
         return y;
     }
+
+    public static boolean odd(boolean x, boolean y, boolean z) {
+        if (x == true && y == true && z == true){
+            return true; }
+        if (x == true && y == false && z == false) {
+            return true; }
+            if (x == false && y == true && z == false) {
+                return true; }
+                if (x == false && y == false && z == true) {
+                    return true; }
+        return false;
+        }
+        
+    
     
     public static void main(String[] args) {
         System.out.println("The greatest of the three integers is " + max3(1, 2, 0.0000001));
+        System.out.println("The amount of true arguments has determined the argument to be " + odd(false, true, false));
+        
     }
 }
