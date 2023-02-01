@@ -37,12 +37,20 @@ public class Solutions {
                     return true; }
         return false;
         }
-        
+
+    public static boolean majority(boolean x, boolean y, boolean z) {
+        if (x == true && y == true || x == true && z == true || y == true && z == true) {
+            return true;
+        }
+        return false;
+    }
+
+    
     
     
     public static void main(String[] args) {
         System.out.println("The greatest of the three integers is " + max3(1, 2, 0.0000001));
         System.out.println("The amount of true arguments has determined the argument to be " + odd(false, true, false));
-        
+        System.out.println("The majority of the arguments are " + majority(true, true, false));
     }
 }
