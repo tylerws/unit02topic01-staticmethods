@@ -45,12 +45,16 @@ public class Solutions {
         return false;
     }
 
-    
+    public static double trigIdendity(double x) {
+        double result = Math.pow(Math.sin(x), 2) + Math.pow(Math.cos(x), 2);
+        return result;
+    }
     
     
     public static void main(String[] args) {
         System.out.println("The greatest of the three integers is " + max3(1, 2, 0.0000001));
         System.out.println("The amount of true arguments has determined the argument to be " + odd(false, true, false));
         System.out.println("The majority of the arguments are " + majority(true, true, false));
+        System.out.println("trigidentity answer is " + trigIdendity(5));
     }
 }
